@@ -26,7 +26,6 @@
             <footer class="footer">
               $8
             </footer>
-
             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
             <script src="functionality.js"></script>
           </body>
