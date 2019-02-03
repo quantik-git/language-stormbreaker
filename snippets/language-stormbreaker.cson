@@ -3,7 +3,7 @@
 # where you need to null-out the snippet to prevent it from
 # appearing in tags or embedded contexts
 '.text.html':
-  # Skeleton templates
+  # Layout templates
   'Basic Template':
       'prefix': 'basic'
       'body': """
@@ -26,11 +26,75 @@
             <footer class="footer">
               $8
             </footer>
+
             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
             <script src="functionality.js"></script>
           </body>
         </html>
         """
+
+  'Sidebar Right Template':
+      'prefix': 'sidebar-right'
+      'body': """
+      <html lang="$1" dir="ltr">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>$2</title>
+          <link rel="stylesheet" href="${3:estilos.css}">
+          <link href="${4:https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMontserrat}" rel="stylesheet">
+        </head>
+          <body class="basic-sidebar-right">
+              <header class="head ${5:sticky-top}">
+                $6
+              </header>
+              <main class="flexCenter">
+                $7
+                <button class="btn-right" role="button" aria-pressed="false"></button>
+              </main>
+              <aside class="sidebar-right">
+                $8
+              </aside>
+              <footer class="footer">
+                $9
+              </footer>
+              <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+              <script src="functionality.js"></script>
+            </body>
+          </html>
+        """
+
+  'Sidebar Left Template':
+      'prefix': 'sidebar-left'
+      'body': """
+      <html lang="$1" dir="ltr">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>$2</title>
+          <link rel="stylesheet" href="${3:estilos.css}">
+          <link href="${4:https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMontserrat}" rel="stylesheet">
+        </head>
+          <body class="basic-sidebar-left">
+              <header class="head ${5:sticky-top}">
+                $6
+              </header>
+              <main class="flexCenter">
+                $7
+                <button class="btn-left" role="button" aria-pressed="false"></button>
+              </main>
+              <aside class="sidebar-left">
+                $8
+              </aside>
+              <footer class="footer">
+                $9
+              </footer>
+              <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+              <script src="functionality.js"></script>
+            </body>
+          </html>
+        """
+
   # Navbars
   'Horizontal Navbar':
       'prefix': 'horizontal-nav'
@@ -46,14 +110,63 @@
           </ul>
         </nav>
         """
-
+    'Vertical Navbar':
+        'prefix': 'vertical-nav'
+        'body': """
+          <nav class="flexCol vertical-nav" aria-labelledby="${1:title1}">
+            <header id="${1:title1}">${2:Title}</header>
+            <ul class="flexCol flexCenter links-hover">
+              <li><a href="$3">${4:Link 1}</a></li>
+              <li><a href="$5">${6:Link 2}</a></li>
+              <li><a href="$7">${8:Link 3}</a></li>
+            </ul>
+          </nav>
+          """
+    # Cards
+    'Card':
+        'prefix': 'card'
+        'body': """
+          <article class="card" aria-labelledby="${1:title1}">
+            <figure>
+              <img src="${:https://bit.ly/2BrBGxX}" alt="${:Hot air balloons}">
+              <header>
+                <h2 id="${1:title1}">A short heading</h2>
+              </header>
+              <figcaption class="content">The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.</figcaption>
+            </figure>
+          </article>
+          """
+      'Card Reverse':
+          'prefix': 'card-reverse'
+          'body': """
+            <article class="card card-reverse" aria-labelledby="${1:title1}">
+              <figure>
+                <img src="https://bit.ly/2BrBGxX" alt="Hot air balloons">
+                <header>
+                  <h2 id="${1:title1}">A short heading</h2>
+                </header>
+                <figcaption class="content">The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.</figcaption>
+              </figure>
+            </article>
+            """
 
 # These null out the snippets so the snippets are not available when in a tag or
 # in embedded contexts like <script> and <style>
 '.text.html .meta.tag, .text.html .embedded':
-  # Skeleton templates
+  # Layout templates
   'Basic template':
     'prefix': 'basic'
+  'Sidebar Right Template':
+     'prefix': 'sidebar-right'
+  'Sidebar Left Template':
+     'prefix': 'sidebar-left'
   # Navbars
   'Horizontal Navbar':
     'prefix': 'horizontal-nav'
+  'Vertical Navbar':
+      'prefix': 'vertical-nav'
+  # Cards
+  'Card':
+      'prefix': 'card'
+  'Card Reverse':
+      'prefix': 'card-reverse'
