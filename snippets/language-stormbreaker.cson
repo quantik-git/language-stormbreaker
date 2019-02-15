@@ -13,7 +13,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>$2</title>
-            <link rel="stylesheet" href="${3:estilos.css}">
+            <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/Stormbreaker.css}">
             <link href="${4:https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMontserrat}" rel="stylesheet">
           </head>
           <body class="basic">
@@ -27,7 +27,7 @@
               $8
             </footer>
             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-            <script src="functionality.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js"></script>
           </body>
         </html>
         """
@@ -40,7 +40,7 @@
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>$2</title>
-          <link rel="stylesheet" href="${3:estilos.css}">
+          <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/Stormbreaker.css}">
           <link href="${4:https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMontserrat}" rel="stylesheet">
         </head>
           <body class="basic-sidebar-right">
@@ -58,7 +58,7 @@
                 $9
               </footer>
               <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-              <script src="functionality.js"></script>
+              <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js"></script>
             </body>
           </html>
         """
@@ -71,7 +71,7 @@
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>$2</title>
-          <link rel="stylesheet" href="${3:estilos.css}">
+          <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/Stormbreaker.css}">
           <link href="${4:https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMontserrat}" rel="stylesheet">
         </head>
           <body class="basic-sidebar-left">
@@ -89,7 +89,7 @@
                 $9
               </footer>
               <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-              <script src="functionality.js"></script>
+              <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js"></script>
             </body>
           </html>
         """
@@ -148,6 +148,15 @@
               </figure>
             </article>
             """
+      # Basic Article
+      'Basic Article':
+          'prefix': 'basic-article'
+          'body': """
+            <article class="${1:flexCol}" aria-labelledby="${2:title1}">
+              <h${3:1} id="${2:title1}" class="flexCenter">${4:Title}</h${3:1}>
+              ${5:<p class="flexCenter"></p>}
+            </article>
+            """
 
 # These null out the snippets so the snippets are not available when in a tag or
 # in embedded contexts like <script> and <style>
@@ -169,3 +178,6 @@
       'prefix': 'card'
   'Card Reverse':
       'prefix': 'card-reverse'
+  # Basic Article
+  'Basic Article':
+      'prefix': 'basic-article'
