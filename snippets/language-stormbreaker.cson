@@ -148,9 +148,47 @@
               </figure>
             </article>
             """
-      # Basic Article
-      'Basic Article':
-          'prefix': 'basic-article'
+
+      # Stormbreaker Essentials FAZER ISTO TUDO E ATUALIZAR O DE CIMA
+      # Stormbreaker Article
+      'Stormbreaker Article':
+          'prefix': 'Stormbreaker-article'
+          'body': """
+            <article class="${1:flexCol}" aria-labelledby="${2:title1}">
+              <h${3:1} id="${2:title1}" class="flexCenter">${4:Title}</h${3:1}>
+              ${5:<p class="flexCenter"></p>}
+            </article>
+            """
+      # Stormbreaker Article
+      'Stormbreaker Article':
+          'prefix': 'Stormbreaker-article'
+          'body': """
+            <article class="${1:flexCol}" aria-labelledby="${2:title1}">
+              <h${3:1} id="${2:title1}" class="flexCenter">${4:Title}</h${3:1}>
+              ${5:<p class="flexCenter"></p>}
+            </article>
+            """
+      # Stormbreaker Img
+      'Stormbreaker Img':
+          'prefix': 'Stormbreaker-img'
+          'body': """
+            <article class="${1:flexCol}" aria-labelledby="${2:title1}">
+              <h${3:1} id="${2:title1}" class="flexCenter">${4:Title}</h${3:1}>
+              ${5:<p class="flexCenter"></p>}
+            </article>
+            """
+      # Stormbreaker Quote
+      'Stormbreaker Quote':
+          'prefix': 'Stormbreaker-quote'
+          'body': """
+            <article class="${1:flexCol}" aria-labelledby="${2:title1}">
+              <h${3:1} id="${2:title1}" class="flexCenter">${4:Title}</h${3:1}>
+              ${5:<p class="flexCenter"></p>}
+            </article>
+            """
+      # Stormbreaker Form
+      'Stormbreaker Form':
+          'prefix': 'Stormbreaker-form'
           'body': """
             <article class="${1:flexCol}" aria-labelledby="${2:title1}">
               <h${3:1} id="${2:title1}" class="flexCenter">${4:Title}</h${3:1}>
@@ -178,6 +216,15 @@
       'prefix': 'card'
   'Card Reverse':
       'prefix': 'card-reverse'
-  # Basic Article
-  'Basic Article':
-      'prefix': 'basic-article'
+  # Stormbreaker Article
+  'Stormbreaker Article':
+      'prefix': 'Stormbreaker-article'
+  # Stormbreaker Img
+  'Stormbreaker Img':
+      'prefix': 'Stormbreaker-img'
+  # Stormbreaker Quote
+  'Stormbreaker Quote':
+      'prefix': 'Stormbreaker-quote'
+  # Stormbreaker Form
+  'Stormbreaker Form':
+      'prefix': 'Stormbreaker-form'
