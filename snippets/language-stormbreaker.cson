@@ -13,21 +13,24 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>$2</title>
-            <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/Stormbreaker.css}">
-            <link href="${4:https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMontserrat}" rel="stylesheet">
+            <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@latest/Stormbreaker.css}">
+            <script src="https://code.jquery.com/jquery-1.10.2.js" defer></script>
+            <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js" defer></script>
           </head>
           <body class="basic">
+
             <header class="head ${5:sticky-top}">
               $6
             </header>
+
             <main class="flexCenter">
               $7
             </main>
+
             <footer class="footer">
               $8
             </footer>
-            <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-            <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js"></script>
+
           </body>
         </html>
         """
@@ -35,63 +38,73 @@
   'Sidebar Right Template':
       'prefix': 'sidebar-right'
       'body': """
+      <!DOCTYPE html>
       <html lang="$1" dir="ltr">
         <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>$2</title>
-          <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/Stormbreaker.css}">
-          <link href="${4:https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMontserrat}" rel="stylesheet">
+          <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@latest/Stormbreaker.css}">
+          <script src="https://code.jquery.com/jquery-1.10.2.js" defer></script>
+          <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js" defer></script>
         </head>
-          <body class="basic-sidebar-right">
-              <header class="head ${5:sticky-top}">
-                $6
-              </header>
-              <main class="flexCenter">
-                $7
-                <button class="btn-sidebar-right" aria-pressed="false"></button>
-              </main>
-              <aside class="sidebar-right" aria-expanded="true">
-                $8
-              </aside>
-              <footer class="footer">
-                $9
-              </footer>
-              <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-              <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js"></script>
-            </body>
-          </html>
+        <body class="basic-sidebar-right">
+
+          <header class="head ${5:sticky-top}">
+            $6
+          </header>
+
+          <main class="flexCenter">
+            $7
+            <button class="btn-sidebar-right" aria-pressed="false"></button>
+          </main>
+
+          <aside class="sidebar-right" aria-expanded="true">
+            $8
+          </aside>
+
+          <footer class="footer">
+            $9
+          </footer>
+
+        </body>
+      </html>
         """
 
   'Sidebar Left Template':
       'prefix': 'sidebar-left'
       'body': """
+      <!DOCTYPE html>
       <html lang="$1" dir="ltr">
         <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>$2</title>
-          <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/Stormbreaker.css}">
-          <link href="${4:https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMontserrat}" rel="stylesheet">
+          <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@latest/Stormbreaker.css}">
+          <script src="https://code.jquery.com/jquery-1.10.2.js" defer></script>
+          <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js" defer></script>
         </head>
-          <body class="basic-sidebar-left">
-              <header class="head ${5:sticky-top}">
-                $6
-              </header>
-              <main class="flexCenter">
-                $7
-                <button class="btn-sidebar-left" aria-pressed="false"></button>
-              </main>
-              <aside class="sidebar-left" aria-expanded="true">
-                $8
-              </aside>
-              <footer class="footer">
-                $9
-              </footer>
-              <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-              <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js"></script>
-            </body>
-          </html>
+        <body class="basic-sidebar-left">
+
+          <header class="head ${5:sticky-top}">
+            $6
+          </header>
+
+          <main class="flexCenter">
+            $7
+            <button class="btn-sidebar-left" aria-pressed="false"></button>
+          </main>
+
+          <aside class="sidebar-left" aria-expanded="true">
+            $8
+          </aside>
+
+          <footer class="footer">
+            $9
+          </footer>
+
+        </body>
+      </html>
         """
 
   # Navbars
