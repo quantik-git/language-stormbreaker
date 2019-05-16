@@ -12,23 +12,26 @@
           <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>$2</title>
-            <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@latest/Stormbreaker.css}">
-            <script src="https://code.jquery.com/jquery-1.10.2.js" defer></script>
-            <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js" defer></script>
+            <meta name="author" content="$2">
+            <meta name="description" content="$3">
+            <meta name="keywords" content="$4">
+            <title>$5</title>
+            <link rel="stylesheet" href="${6:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@master/Stormbreaker.min.css}">
+            <script src="https://code.jquery.com/jquery-1.10.2.min.js" defer></script>
+            <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@master/functionality.min.js" defer></script>
           </head>
           <body class="basic">
 
-            <header class="head ${5:sticky-top}">
-              $6
+            <header class="head ${7:sticky-top}">
+              $8
             </header>
 
             <main class="flexCenter">
-              $7
+              $9
             </main>
 
             <footer class="footer">
-              $8
+              $10
             </footer>
 
           </body>
@@ -43,28 +46,31 @@
         <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>$2</title>
-          <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@latest/Stormbreaker.css}">
-          <script src="https://code.jquery.com/jquery-1.10.2.js" defer></script>
-          <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js" defer></script>
+          <meta name="author" content="$2">
+          <meta name="description" content="$3">
+          <meta name="keywords" content="$4">
+          <title>$5</title>
+          <link rel="stylesheet" href="${6:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@master/Stormbreaker.min.css}">
+          <script src="https://code.jquery.com/jquery-1.10.2.min.js" defer></script>
+          <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@master/functionality.min.js" defer></script>
         </head>
         <body class="basic-sidebar-right">
 
-          <header class="head ${5:sticky-top}">
-            $6
+          <header class="head ${7:sticky-top}">
+            $8
           </header>
 
           <main class="flexCenter">
-            $7
+            $9
             <button class="btn-sidebar-right" aria-pressed="false"></button>
           </main>
 
           <aside class="sidebar-right" aria-expanded="true">
-            $8
+            $10
           </aside>
 
           <footer class="footer">
-            $9
+            $11
           </footer>
 
         </body>
@@ -79,28 +85,31 @@
         <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>$2</title>
-          <link rel="stylesheet" href="${3:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@latest/Stormbreaker.css}">
-          <script src="https://code.jquery.com/jquery-1.10.2.js" defer></script>
-          <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker/functionality.js" defer></script>
+          <meta name="author" content="$2">
+          <meta name="description" content="$3">
+          <meta name="keywords" content="$4">
+          <title>$5</title>
+          <link rel="stylesheet" href="${6:https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@master/Stormbreaker.min.css}">
+          <script src="https://code.jquery.com/jquery-1.10.2.min.js" defer></script>
+          <script src="https://cdn.jsdelivr.net/gh/quantik-git/Stormbreaker@master/functionality.min.js" defer></script>
         </head>
         <body class="basic-sidebar-left">
 
-          <header class="head ${5:sticky-top}">
-            $6
+          <header class="head ${7:sticky-top}">
+            $8
           </header>
 
           <main class="flexCenter">
-            $7
+            $9
             <button class="btn-sidebar-left" aria-pressed="false"></button>
           </main>
 
           <aside class="sidebar-left" aria-expanded="true">
-            $8
+            $10
           </aside>
 
           <footer class="footer">
-            $9
+            $11
           </footer>
 
         </body>
@@ -143,9 +152,9 @@
             <figure>
               <img src="${2:https://bit.ly/2BrBGxX}" alt="${3:Hot air balloons}">
               <header>
-                <h2 id="${1:title1}">${4:A short heading}</h2>
+                <h${4:2} class="card-header" id="${1:title1}">${5:A short heading}</h${4:2}>
               </header>
-              <figcaption class="content">${5:The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.}</figcaption>
+              <figcaption class="content">${6:The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.}</figcaption>
             </figure>
           </article>
           """
@@ -156,9 +165,9 @@
               <figure>
                 <img src="${2:https://bit.ly/2BrBGxX}" alt="${3:Hot air balloons}">
                 <header>
-                  <h2 id="${1:title1}">${4:A short heading}</h2>
+                  <h${4:2} class="card-header" id="${1:title1}">${5:A short heading}</h${4:2}>
                 </header>
-                <figcaption class="content">${5:The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.}</figcaption>
+                <figcaption class="content">${6:The idea of reaching the North Pole by means of balloons appears to have been entertained many years ago.}</figcaption>
               </figure>
             </article>
             """
